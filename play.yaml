@@ -1,0 +1,8 @@
+---
+
+- hosts : host1
+  sudo : yes
+  name : play1
+  tasks : 
+    - name : Install apache
+      apt : name=apache2 state=latest
